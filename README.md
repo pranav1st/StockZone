@@ -1,7 +1,7 @@
-**Install dependencies:-
+**Install dependencies:-**
 
 npm -i
 
-**To run:-
+**To run:-**
 
 npm run start
