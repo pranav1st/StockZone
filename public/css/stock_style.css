@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display:flex;
+    background-color: #192436    ;
+    overflow: auto;
+    top:0;
+    justify-content: space-around;
+  }
+  
+  .nav-list {
+    width: 50%;
+    display: flex;
+    float: right;
+  }
+  
+  .nav-list li {
+    list-style: none;
+    padding: 7% 7%;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    float: right;
+    padding: 15% 10% 0% 0%;
+    width: 200%;
+    height: 100%;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #67635c;
+  }
+  
+  .logo{
+    float:left;
+    padding: 0;
+  }
+  
+  .logo img{
+    width: 50%;
+    height: auto;
+    margin: 10% 0%;
+  }
+  
+  .active {
+  background-color: #aa9a7d;
+  border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar {
+        float: none;
+        display: auto;
+        overflow: auto;
+    }
+  }
+  
+  .iframe-api{
+    text-align: center;
+  }
+  
+  .search-bar{
+    text-align: center;
+  }
+  
+  .search-bar input{
+    width: 250px;
+    font-size: 17px;
+  }
+  /*
+  .search-box{
+    background-color: #aa9a7d;
+    width: 100%;
+    padding: 10% 0% 5% 0%;
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    color: #192436;
+  }
+  
+  .search-box input{
+    font-size: 30px;
+    margin:0;
+    padding: 0% 0% 0% 0%;
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .search-box button{
+    font-size:30px;
+    margin:0;
+    padding:0.2%;
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+  }
+  */
+  .search-bar input{
+    font-size: 20px;
+    margin:0;
+    padding: 0% 0% 0% 0%;
+    width: 20%;
+    border-radius: 5px;
+  }
+  
+  .search-bar button{
+    font-size:20px;
+    margin:0;
+    padding:0.2%;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+  }
+  
+  .flex-container {
+    display: flex;
+    border: 2px solid #192436;
+  }
+  
+  .tradingview-gainloss-container{
+    flex:1;
+    padding-left: 3%;
+  }
+  
+  .tradingview-market-container{
+    display: flex;
+    text-align: center;
+  }
+  
+  
+  .tradingview-news-container{
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid #192436;*/
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display:flex;
+  background-color: #192436    ;
+  overflow: auto;
+  top:0;
+  justify-content: space-around;
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  float: right;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 7% 7%;
+}
+
+.nav-list li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  float: right;
+  padding: 15% 10% 0% 0%;
+  width: 200%;
+  height: 100%;
+}
+
+.nav-list li a:hover {
+  background-color: #67635c;
+}
+
+.logo{
+  float:left;
+  padding: 0;
+}
+
+.logo img{
+  width: 50%;
+  height: auto;
+  margin: 10% 0%;
+}
+
+.active {
+background-color: #aa9a7d;
+border-radius: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+      float: none;
+      display: auto;
+      overflow: auto;
+  }
+}
+
+.iframe-api{
+  text-align: center;
+}
+
+.search-bar{
+  text-align: center;
+}
+
+.search-bar input{
+  width: 250px;
+  font-size: 17px;
+}
+/*
+.search-box{
+  background-color: #aa9a7d;
+  width: 100%;
+  padding: 10% 0% 5% 0%;
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  color: #192436;
+}
+
+.search-box input{
+  font-size: 30px;
+  margin:0;
+  padding: 0% 0% 0% 0%;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+}
+
+.search-box button{
+  font-size:30px;
+  margin:0;
+  padding:0.2%;
+  border-radius: 10px;
+  border: solid;
+  border-width: 1px;
+}
+*/
+.search-bar input{
+  font-size: 20px;
+  margin:0;
+  padding: 0% 0% 0% 0%;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.search-bar button{
+  font-size:20px;
+  margin:0;
+  padding:0.2%;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+}
+
+.flex-container {
+  display: flex;
+  border: 2px solid #192436;
+}
+
+.tradingview-gainloss-container{
+  flex:1;
+  padding-left: 3%;
+}
+
+.tradingview-market-container{
+  display: flex;
+  text-align: center;
+}
+
+
+.tradingview-news-container{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #192436;
+}
+  

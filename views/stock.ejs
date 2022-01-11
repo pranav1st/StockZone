@@ -1,0 +1,166 @@
+<html>
+    <title>Discover Page | STOCKZONE</title>
+    <head>
+        <!-- TradingView TickerTape -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Nasdaq 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "description": "",
+                    "proName": "BSE:SENSEX"
+                },
+                {
+                    "description": "",
+                    "proName": "BSE:FEDERALBNK"
+                },
+                {
+                    "description": "",
+                    "proName": "BINANCE:BTCUSDT"
+                },
+                {
+                    "description": "INR/USD",
+                    "proName": "FX_IDC:INRUSD"
+                },
+                {
+                    "description": "INR/EUR",
+                    "proName": "FX_IDC:INREUR"
+                }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "regular",
+                "locale": "en"
+            }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/market_style.css">
+        <title></title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="navbar">
+                <div class="logo"><img src="img/logo.png" width="340"></div>
+                    <ul class="nav-list">
+                        <li><a href="home"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                        <li><a class="active" href="discover"><i class="fa fa-fw fa-inr"></i> Discover</a></li>
+                        <li><a href="search"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                        <li><a href="about"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                        <li><a href="login"><i class="fa fa-fw fa-user"></i> Login</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="search-bar">
+            <input type="search" placeholder="Search...">
+            <button type="submit"><i class="fa fa-fw fa-search"></i></button>
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <!-- TradingView Gain/Loss -->
+        <div class="tradingview-gainloss-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+            {
+                "colorTheme": "light",
+                "dateRange": "12M",
+                "exchange": "BSE",
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "isTransparent": true,
+                "showSymbolLogo": true,
+                "showFloatingTooltip": true,
+                "width": "700",
+                "height": "500",
+                "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                "gridLineColor": "rgba(42, 46, 57, 0)",
+                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+            }
+            </script>
+        </div>
+
+        
+        <!-- TradingView Market Data -->
+        <div class="tradingview-market-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+            {
+                "width": "800",
+                "height": "500",
+                "symbolsGroups": [{"name": "Indices","originalName": "Indices","symbols": [
+                    {"name": "FOREXCOM:SPXUSD","displayName": "S&P 500"},
+                    {"name": "FOREXCOM:NSXUSD","displayName": "Nasdaq 100"},
+                    {"name": "FOREXCOM:DJI","displayName": "Dow 30"},
+                    {"name": "INDEX:NKY","displayName": "Nikkei 225"},
+                    {"name": "INDEX:DEU40","displayName": "DAX Index"},
+                    {"name": "FOREXCOM:UKXGBP","displayName": "UK 100"},
+                    {"name": "BSE:SENSEX"},
+                    {"name": "BSE:FEDERALBNK"},{"name": "BSE:BANKBARODA"},{"name": "BSE:MANORG"},
+                    {"name": "BSE:DIVISLAB"},{"name": "BSE:TATAMTRDVR"},{"name": "BSE:NGLFINE"},
+                    {"name": "BSE:BANKINDIA"},{"name": "BSE:IRCTC"},{"name": "BSE:RELIANCE"},{"name": "BSE:TATAPOWER"},{"name": "BSE:SADHNANIQ"},
+                    {"name": "BSE:SINGER"},{"name": "BSE:GUJGAS"},{"name": "BSE:SBIN"},{"name": "BSE:PONDYOXIDE"},{"name": "BSE:SUBEX"},
+                    {"name": "BSE:NIFTYBEES"},{"name": "BSE:APOLLOTRI"},{"name": "BSE:BLACKROSE"},{"name": "BSE:LLOYDSTEEL"}]},
+                {"name": "Futures","originalName": "Futures","symbols":[{"name": "CME_MINI:ES1!","displayName": "S&P 500"},{"name": "CME:6E1!","displayName": "Euro"},{"name": "COMEX:GC1!","displayName": "Gold"},{"name": "NYMEX:CL1!","displayName": "Crude Oil"},{"name": "NYMEX:NG1!","displayName": "Natural Gas"},{"name": "CBOT:ZC1!","displayName": "Corn"}]},
+                {"name": "Bonds","originalName": "Bonds","symbols":[{"name": "CME:GE1!","displayName": "Eurodollar"},{"name": "CBOT:ZB1!","displayName": "T-Bond"},{"name": "CBOT:UB1!","displayName": "Ultra T-Bond"},{"name": "EUREX:FGBL1!","displayName": "Euro Bund"},{"name": "EUREX:FBTP1!","displayName": "Euro BTP"},{"name": "EUREX:FGBM1!","displayName": "Euro BOBL"}]},
+                {"name": "Forex","originalName": "Forex","symbols":[{"name": "FX:EURUSD"},{"name": "FX:GBPUSD"},{"name": "FX:USDJPY"},{"name": "FX:USDCHF"},{"name": "FX:AUDUSD"},{"name": "FX:USDCAD"}]}],
+                "showSymbolLogo": true,
+                "colorTheme": "light",
+                "isTransparent": false,
+                "locale": "en"
+            }
+            </script>
+        </div>
+        </div>
+        <br>
+
+                <!-- TradingView News -->
+        <div class="tradingview-news-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+            {
+                "feedMode": "all_symbols",
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "regular",
+                "width": 900,
+                "height": 1000,
+                "locale": "en"
+            }
+            </script>
+        </div>
+        <br>
+
+
+        
+        <!--
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Financial Markets</span></a> by TradingView</div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-india/" rel="noopener" target="_blank"><span class="blue-text">Stock Market Today</span></a> by TradingView</div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/key-events/" rel="noopener" target="_blank"><span class="blue-text">Daily news roundup</span></a> by TradingView</div>
+        -->
+    </body>
+</html>

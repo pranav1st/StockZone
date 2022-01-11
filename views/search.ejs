@@ -1,0 +1,93 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/market_style.css">
+        <link rel="stylesheet" href="css/search_style.css">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!--<script type="text/babel" src="js/search_js.js"></script>-->
+        <title> Search | STOCKZONE</title>
+    </head>
+    <body bgcolor="#aa9a7d">
+        <nav class="nav">
+            <div class="navbar">
+                <div class="logo"><img src="img/logo.png" width="340"></div>
+                    <ul class="nav-list">
+                        <li><a href="home"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                        <li><a href="discover"><i class="fa fa-fw fa-inr"></i> Discover</a></li>
+                        <li><a class="active" href="search"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                        <li><a href="about"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                        <li><a href="login"><i class="fa fa-fw fa-user"></i> Login</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="search-wrapper">
+            <div class="search-box">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+            <input type="search" class="input-search" placeholder="Type to Search...">
+            </div>      
+        </div>
+        <div class="graph" >
+        </div>
+        <script src="js/dict.js"></script>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <br/>
+    </body>
+    
+    <script type="text/babel">
+        var search_query = document.querySelector(".btn-search");
+        search_query.addEventListener("click",()=>{
+            var user_inp = document.querySelector(".input-search").value;
+            console.log(user_inp);
+            const keys = Object.keys(dicti);
+            console.log(keys);
+
+            
+            
+            class MenuCard extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.myRef = React.createRef();
+                }
+
+                componentDidMount() {
+                    const scriptSrc = document.createElement('script');
+                    const script = document.createElement('script');
+                    scriptSrc.src = 'https://s3.tradingview.com/tv.js';
+                    scriptSrc.async = true;
+                    var stock_id = this.props.name;
+                    console.log(stock_id);
+                    script.innerHTML = new window.TradingView.widget({
+                        "width": 1500,
+                        "height": 1000,
+                        "symbol": "BSE:"+stock_id,
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "withdateranges": true,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_7bf97"
+                        });
+                    this.myRef.current.appendChild(script);
+                }
+
+                render() {
+                    return (
+                    <div className="tradingview-widget-container" ref={this.myRef}>
+                        <div id="tradingview_7bf97"></div>
+                    </div>
+                    );
+                }
+                };
+            
+            ReactDOM.render(<div><MenuCard name={user_inp}></MenuCard></div>, document.querySelector(".graph"));
+        });
+    </script>
+</html>
