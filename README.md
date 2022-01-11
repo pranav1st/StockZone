@@ -1,7 +1,7 @@
-**Install dependencies:-**
+**Install dependencies (in root folder):-**
 
-npm -i
+```npm -i```
 
 **To run:-**
 
-npm run start
+```npm run start```
