@@ -1,5 +1,7 @@
-README.md
+**Install dependencies:-
 
-To run:-
+npm -i
+
+**To run:-
 
 npm run start
