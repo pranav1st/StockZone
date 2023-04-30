@@ -18,11 +18,19 @@ Navigate within the page using navbar
 
 
 Discover Page
+
 ![Discover1](images/Discover1.jpg)
 ![Discover2](images/Discover2.jpg)
 
 Login Page
+
 ![Login](images/Login.jpg)
 
 Search Page
+
 ![Search](images/Search.jpg)
+
+
+Disclaimer:
+
+Please note that the data required, as well as the APIs provided for the development of this project is provided by [TradingView](https://in.tradingview.com/ "TradingView")
