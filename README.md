@@ -8,7 +8,7 @@ A MERN Stack project which gives real-time data on stocks and news updates.
 
 ```npm run start```
 
-In browser, enter:
+Navigate to the following URL using a browser:
 
 ```localhost:5000/home```
 
