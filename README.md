@@ -16,4 +16,13 @@ Navigate within the page using navbar
 
 **Screenshots:**
 
+
+Discover Page
 ![Discover1](images/Discover1.jpg)
+![Discover2](images/Discover2.jpg)
+
+Login Page
+![Login](images/Login.jpg)
+
+Search Page
+![Search](images/Search.jpg)
