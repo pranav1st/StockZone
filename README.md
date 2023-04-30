@@ -10,7 +10,7 @@ A MERN Stack project which gives real-time data on stocks and news updates.
 
 Navigate to the following URL using a browser:
 
-```localhost:5000/home```
+```localhost:5000/discover```
 
 Navigate within the page using navbar
 
