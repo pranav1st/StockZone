@@ -13,3 +13,7 @@ Navigate to the following URL using a browser:
 ```localhost:5000/home```
 
 Navigate within the page using navbar
+
+**Screenshots:**
+
+![Discover1](images/Discover1.jpg)
